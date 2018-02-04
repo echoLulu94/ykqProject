@@ -1,0 +1,422 @@
+{
+	"id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+	"name": "文件系统",
+	"description": "",
+	"order": [
+		"0a74c1f6-fbfc-cd9c-3dc9-68b0497911eb",
+		"c2d2b673-4f22-22c2-a024-f30bd23ae78d",
+		"7a3238df-b535-4f20-ebc0-070ceb0054a4",
+		"67fadecf-83d8-6403-ac05-ab6faa2b23e6",
+		"083cf53a-61d0-f36b-26f5-98dedf1bddf8",
+		"73b6770a-fe54-daf2-e4bc-38376a79c377",
+		"2c5068e6-31ee-586b-e961-bbf1ea4f08f4",
+		"50d331b1-050d-bd6e-9264-9d3c27afa482",
+		"0d4dbc22-0c81-2676-9fc6-a924a8c8759f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1514427538944,
+	"owner": "2417280",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "083cf53a-61d0-f36b-26f5-98dedf1bddf8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/deleteMedia",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "bd900d5d0cb3495ea76ffb835ee08f0e",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516875679746,
+			"name": "媒资-删除",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"根据id删除媒资成功！\",\n    \"resultData\": \"bd900d5d0cb3495ea76ffb835ee08f0e\"                //媒资id\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "0a74c1f6-fbfc-cd9c-3dc9-68b0497911eb",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/findMedia",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516936540394,
+			"name": "媒资-查询",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"媒资查询成功！\",\n    \"resultData\": {\n        \"pageCurrent\": 1,                                           //当前页\n        \"pageSize\": 10,                                             //页面大小\n        \"totalRecord\": 703,                                         //总数\n        \"totalPage\": 71,                                            //总页数\n        \"pageData\": [\n            {\n                \"id\": \"fff15b1aa643490f87536aef671ec904\",           //媒资id\n                \"fileType\": \"11\",                                   //文件类型\n                \"fileMd5\": null,                                    //文件MD5值\n                \"originalFilename\": null,                           //原文件名\n                \"staticRelativePath\": \"/sc/\",                       //静态资源路径\n                \"fileName\": \"5242a85f48344632a9c21a5146049561.mp4\", //文件名\n                \"type\": null,                                       //类型\n                \"remark\": null,                                     //备注\n                \"createBy\": null,                                   //创建人\n                \"createTime\": 1504151982638                         //创建时间\n            }\n        ],\n        \"startIndex\": 0\n    }\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "0d4dbc22-0c81-2676-9fc6-a924a8c8759f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/gqc",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "content",
+					"value": "http://localhost/scres/msite/page/sys/index.html?id=61be9a333edf41ae8d185cbdf9c85558",
+					"description": "内容",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "logoFileName",
+					"value": "D:\\server\\Openresty_1.7.10\\html\\scres\\logo\\weixiang.png",
+					"description": "logo图片",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qrCodeFileName",
+					"value": "61be9a333edf41ae8d185cbdf9c85558member.png",
+					"description": "二维码文件名",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qrCodeDestPath",
+					"value": "D:\\server\\Openresty_1.7.10\\html\\sc\\19\\54545C83FE749DCAD860C40FC71CD8F5\\10\\",
+					"description": "二维码文件路径",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "needCompress",
+					"value": "false",
+					"description": "标记",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "memberCode",
+					"value": "54545C83FE749DCAD860C40FC71CD8F5",
+					"description": "会员编号",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516937898848,
+			"name": "生成二维码",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"获取二维码成功！\",\n    \"resultData\": null\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "2c5068e6-31ee-586b-e961-bbf1ea4f08f4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/updateMedia",
+			"folder": null,
+			"queryParams": [],
+			"events": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "34e1769275714be18472d4edaa8ad9c3",
+					"description": "媒资id",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fileType",
+					"value": "10",
+					"description": "文件类型",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fileMd5",
+					"value": "123",
+					"description": "文件MD5值",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "originalFilename",
+					"value": "123",
+					"description": "原始文件名",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "staticRelativePath",
+					"value": "123",
+					"description": "静态相对路径",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fileName",
+					"value": "123",
+					"description": "文件名",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516937633713,
+			"name": "媒资-修改",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"媒资修改成功！\",\n    \"resultData\": {\n        \"id\": \"34e1769275714be18472d4edaa8ad9c3\", //[{\"key\":\"id\",\"value\":\"34e1769275714be18472d4edaa8ad9c3\",\"description\":\"媒资id\",\"type\":\"text\",\"enabled\":true}]\n        \"fileType\": \"10\",                         //文件类型\n        \"fileMd5\": \"123\",                         //文件MD5值\n        \"originalFilename\": \"123\",                //原始文件名\n        \"staticRelativePath\": \"123\",              //静态相对路径\n        \"fileName\": \"123\",                        //文件名\n        \"type\": null,                             //类型\n        \"remark\": null,                           //备注\n        \"createBy\": null,                         //创建人\n        \"createTime\": null                        //创建时间\n    }\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "50d331b1-050d-bd6e-9264-9d3c27afa482",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/viewMedia",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "00039406e0284066b9126c75e78a2d0a",
+					"description": "媒资id",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516937850793,
+			"name": "媒资-详情",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"查找媒资详情成功！\",\n    \"resultData\": {\n        \"id\": \"00039406e0284066b9126c75e78a2d0a\",            //媒资\n        \"fileType\": \"13\",                                    //文件类型\n        \"fileMd5\": null,                                     //文件MD5值\n        \"originalFilename\": null,                            //原始文件\n        \"staticRelativePath\": \"/upload/extension/\",          //静态相对路经\n        \"fileName\": \"c304fbc1ee154a0b88347fd5b960bdb8.pdf\",  //文件名\n        \"type\": null,                                        //类型\n        \"remark\": null,                                      //备注\n        \"createBy\": null,                                    //创建人\n        \"createTime\": 1506310629262                          //创建时间\n    }\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "67fadecf-83d8-6403-ac05-ab6faa2b23e6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/saveMedia",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "fileType",
+					"value": "10",
+					"description": "文件类型",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fileMd5",
+					"value": "123456",
+					"description": "文件MD5值",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "originalFilename",
+					"value": "2.png",
+					"description": "原文件名",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "staticRelativePath",
+					"value": "/sc/",
+					"description": "静态相对路径",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fileName",
+					"value": "3135c088022e4eee89aae9b366de1b4f.png",
+					"description": "文件名",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516936882026,
+			"name": "媒资-保存",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"媒资保存成功！\",\n    \"resultData\": {\n        \"id\": \"8775a9e7d7d549618050649337685c96\",           //媒资id\n        \"fileType\": \"10\",                                   //文件类型\n        \"fileMd5\": \"123456\",                                //文件MD5值\n        \"originalFilename\": \"2.png\",                        //原始文件名\n        \"staticRelativePath\": \"/sc/\",                       //静态相对路径\n        \"fileName\": \"3135c088022e4eee89aae9b366de1b4f.png\", //文件名\n        \"type\": null,                                       //类型\n        \"remark\": null,                                     //备注\n        \"createBy\": null,                                   //创建人\n        \"createTime\": null                                  //创建时间\n    }\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "73b6770a-fe54-daf2-e4bc-38376a79c377",
+			"headers": "",
+			"headerData": [],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/deleteAllMedia",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "ids",
+					"value": "8775a9e7d7d549618050649337685c96,c718efcd7617445dad90767fb20755a9",
+					"description": "媒资ids数组",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516937373024,
+			"name": "媒资-批量删除",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"根据ids删除媒资成功！\",\n    \"resultData\": [                         //媒资ids数组\n        \"8775a9e7d7d549618050649337685c96\",\n        \"c718efcd7617445dad90767fb20755a9\"\n    ]\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"collection_id": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7a3238df-b535-4f20-ebc0-070ceb0054a4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/uploadFile",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"description": "选择文件",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1516963016498,
+			"name": "文件-上传",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"媒资上传成功！\",\n    \"resultData\": {\n        \"path\": \"15/2d913367f43e4afa8962fb267dba7882.jpg\",                       //图片的存放路径\n        \"id\": \"f93fc97228684ab8946840e9a7915c5d\",                                //图片的id\n        \"url\": \"http://localhost/scres/15/2d913367f43e4afa8962fb267dba7882.jpg\"  //图片的访问路径\n    }\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c2d2b673-4f22-22c2-a024-f30bd23ae78d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://10.104.11.188:20888/devcxsfs/cms/uploadMedia",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "1.jpg",
+					"description": "选择文件",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "fileType",
+					"value": "10",
+					"description": "媒资类型：10-图片；11-视频；12-音频；13-pdf；14-word；15-excel；16-txt；17-apk；18-zip ；19-二维码",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fileMd5",
+					"value": "EB6A7AB1C4A1763EB25BA7BFD395ADCC",
+					"description": "文件的MD5值",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1517206814774,
+			"name": "媒资-上传",
+			"description": "{\n    \"resultCode\": \"10\",\n    \"resultMsg\": \"媒资上传成功！\",\n    \"resultData\": {\n        \"path\": \"15/2d913367f43e4afa8962fb267dba7882.jpg\",                       //图片的存放路径\n        \"id\": \"f93fc97228684ab8946840e9a7915c5d\",                                //图片的id\n        \"url\": \"http://localhost/scres/15/2d913367f43e4afa8962fb267dba7882.jpg\"  //图片的访问路径\n    }\n}",
+			"collectionId": "541b2c73-3cb6-d645-a0ce-294c635eb980",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}
